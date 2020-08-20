@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const getJokes = async () => {
-      const res = await fetch(`${BASEJOKES}?escaping=javascript`)
+      const res = await fetch(`${BASEJOKES}?escape=javascript`)
       const json = await res.json()
       setResults(json.value)
     }
